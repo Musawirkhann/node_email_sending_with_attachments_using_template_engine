@@ -1,0 +1,43 @@
+<div class="jumbotron">
+    <h4 class="font-weight-bolder">Compose New Email</h4>
+    <div class="form">
+        <div class="form-group">
+            <label for="emailto">Email To</label>
+            <input type="email" data-role="tagsinput" name="emailto" id="emailto" placeholder="Enter email">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="form">
+                <div class="form-group">
+                    <label for="emailCC">Email CC</label>
+                    <input type="email" data-role="tagsinput" name="emailCC" id="emailCC" placeholder="Enter email">
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form">
+                <div class="form-group">
+                    <label for="emailbcc">Email Bcc</label>
+                    <input type="email" data-role="tagsinput" name="emailbcc" id="emailbcc" placeholder="Enter email">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Enter subject">
+        </div>
+    </div>
+    <div class="summernote" id='email_template'></div>
+    <h4 class="mt-3">Attachements</h4>
+    <form action="#" class="dropzone mt-2" id="email_attachments">
+        <div class="fallback">
+            <input type="file" name="file" multiple>
+        </div>
+    </form>
+    <div class="">
+        <button class="btn btn-success mt-3 float-right" onclick="Send_Email()">Send Email</button>
+    </div>
+  </div>
